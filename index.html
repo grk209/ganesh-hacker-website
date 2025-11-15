@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganesh The Hacker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scanline"></div>
+
+  <header class="navbar">
+    <div class="logo">Ganesh<span>_H4CK3R</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-tag">ACCESS GRANTED // WELCOME</p>
+        <h1 class="glitch" data-text="GANESH THE HACKER">
+          GANESH THE HACKER
+        </h1>
+        <h2><span id="typing"></span><span class="cursor">|</span></h2>
+        <p class="hero-sub">
+          1st year AI & ML engineering student // ethical hacking & eSports enthusiast
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-terminal">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="term-title">terminal@ganesh: ~</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <h2 class="section-title">// ABOUT ME</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            I’m <span class="highlight">Ganesh</span>, a 1st year Diploma
+            student in <span class="highlight">AI & ML Engineering</span>.
+          </p>
+          <p>
+            I love exploring how machines learn, how systems can be broken,
+            and how they can be secured again. When I’m not coding or
+            learning AI, you’ll probably find me grinding in
+            <span class="highlight">eSports and gaming tournaments</span>.
+          </p>
+          <p>
+            My goal is to become a <span class="highlight">successful AI & ML engineer</span>
+            and a skilled ethical hacker who can build as well as break
+            systems for good purposes.
+          </p>
+        </div>
+        <div class="about-box">
+          <h3>Quick Info</h3>
+          <ul>
+            <li><span>> SSC Score:</span> 85%</li>
+            <li><span>> Branch:</span> AI & ML Engineering</li>
+            <li><span>> Interests:</span> AI, ML, Hacking, eSports, Gaming</li>
+            <li><span>> Style:</span> Dark theme + Green code 😎</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <h2 class="section-title">// SKILLS</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Programming & Tech</h3>
+          <ul>
+            <li>> Python (basics)</li>
+            <li>> HTML, CSS, JavaScript</li>
+            <li>> Linux terminal basics</li>
+            <li>> Git & GitHub (beginner)</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>AI & ML</h3>
+          <ul>
+            <li>> AI & ML concepts (learning)</li>
+            <li>> Data handling basics</li>
+            <li>> Problem solving mindset</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Hacking & Cyber</h3>
+          <ul>
+            <li>> Ethical hacking mindset</li>
+            <li>> Basic networking concepts</li>
+            <li>> Curiosity to break & secure</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>eSports & Gaming</h3>
+          <ul>
+            <li>> Competitive mindset</li>
+            <li>> Team communication</li>
+            <li>> Fast decision making</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <h2 class="section-title">// PROJECTS</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>01. Portfolio Website</h3>
+          <p>
+            This “Ganesh the Hacker” website – built with HTML, CSS and
+            JavaScript with a hacker theme and animated terminal.
+          </p>
+          <p class="project-tag">#web-dev #frontend</p>
+        </article>
+
+        <article class="project-card">
+          <h3>02. AI & ML Learning</h3>
+          <p>
+            Currently exploring AI & ML basics, data, and algorithms to build
+            future smart systems.
+          </p>
+          <p class="project-tag">#ai #ml #student</p>
+        </article>
+
+        <article class="project-card">
+          <h3>03. eSports Journey</h3>
+          <p>
+            Participating in gaming tournaments and developing focus,
+            reflexes, and strategy through eSports.
+          </p>
+          <p class="project-tag">#gaming #esports</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <h2 class="section-title">// CONTACT</h2>
+      <p class="contact-text">
+        Want to collaborate, build projects, or just talk about AI, hacking,
+        and gaming? Drop a message below.
+      </p>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Type your secret message..." required></textarea>
+        </div>
+        <button type="submit" class="btn primary">Send Message</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ganesh The Hacker. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<link rel="stylesheet" href="style.css">
